@@ -1,0 +1,9 @@
+#Ignorar las carpetas de binarios
+bin/
+obj/
+
+#Ignorar archivos de visual studio
+*.sln
+.vs/
+TestArea/
+TestResults/
