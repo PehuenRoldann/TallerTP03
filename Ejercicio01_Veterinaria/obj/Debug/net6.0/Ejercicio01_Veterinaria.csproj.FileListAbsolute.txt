@@ -1,0 +1,15 @@
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\obj\Debug\net6.0\Ejercicio01_Veterinaria.csproj.AssemblyReference.cache
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\obj\Debug\net6.0\Ejercicio01_Veterinaria.GeneratedMSBuildEditorConfig.editorconfig
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\obj\Debug\net6.0\Ejercicio01_Veterinaria.AssemblyInfoInputs.cache
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\obj\Debug\net6.0\Ejercicio01_Veterinaria.AssemblyInfo.cs
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\obj\Debug\net6.0\Ejercicio01_Veterinaria.csproj.CoreCompileInputs.cache
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\bin\Debug\net6.0\Ejercicio01_Veterinaria.exe
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\bin\Debug\net6.0\Ejercicio01_Veterinaria.deps.json
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\bin\Debug\net6.0\Ejercicio01_Veterinaria.runtimeconfig.json
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\bin\Debug\net6.0\Ejercicio01_Veterinaria.dll
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\bin\Debug\net6.0\Ejercicio01_Veterinaria.pdb
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\obj\Debug\net6.0\Ejercicio01_Veterinaria.dll
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\obj\Debug\net6.0\refint\Ejercicio01_Veterinaria.dll
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\obj\Debug\net6.0\Ejercicio01_Veterinaria.pdb
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\obj\Debug\net6.0\Ejercicio01_Veterinaria.genruntimeconfig.cache
+D:\programacion\taller-de-programacion\TP03_Taller\Ejercicio01_Veterinaria\obj\Debug\net6.0\ref\Ejercicio01_Veterinaria.dll
