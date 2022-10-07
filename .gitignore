@@ -1,9 +1,5 @@
-#Ignorar las carpetas de binarios
-bin/
-obj/
+#Ignorar todo
+*
 
-#Ignorar archivos de visual studio
-*.sln
-.vs/
-TestArea/
-TestResults/
+#Menos el código fuente de las clases
+!.cs
