@@ -2,4 +2,4 @@
 *
 
 #Menos el código fuente de las clases
-!.cs
+!*.cs
