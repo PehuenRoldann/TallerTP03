@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio03_GuardiaHospital.src
 {
-    internal class Aplicacion
+    internal class ProgramaGuardia
     {
         public static void Main(string[] args)
         {
