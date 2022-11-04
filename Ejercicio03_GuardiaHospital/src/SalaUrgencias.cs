@@ -8,6 +8,11 @@ namespace Ejercicio03_GuardiaHospital.src
 {
     public class SalaUrgencias : ISala
     {
+        public string GetTipoDeSala()
+        {
+            return "Urgencias";
+        }
+
         /// <summary>
         /// Encuentra el turno con mayor prioridad de un array con instancias de Turno.
         /// </summary>

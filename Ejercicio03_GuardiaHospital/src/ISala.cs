@@ -15,5 +15,11 @@ namespace Ejercicio03_GuardiaHospital.src
         /// <returns>Turno actual de la sala</returns>
         public Turno TurnoActual(Turno[] pArrayTurnos);
 
+        /// <summary>
+        /// Devuelve un string que contiene el nombre de la estrategia implementada.
+        /// </summary>
+        /// <returns>String</returns>
+        public string GetTipoDeSala();
+
     }
 }

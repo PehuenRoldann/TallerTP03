@@ -82,7 +82,7 @@
         /// Devuelve un array con los datos del proximo turno de la sala para el día de hoy, o null si no hay un turno pendiente.
         /// </summary>
         /// <param name="pIdSala"></param>
-        /// <returns></returns>
+        /// <returns>Datos: 0: nombre, 1: fecha, 2: prioridad</returns>
         public string[]? TurnoActual(int pIdSala)
         {
             Repository repository = new Repository();
@@ -92,6 +92,26 @@
             else { return sala.ProximoTurno(DateTime.Today, DateTime.Today.AddDays(1));}
         }
 
+        /// <summary>
+        /// Devuelve una matriz de Nx2 donde cada fila representa datos de una sala de la guardia. <br></br>
+        /// La columna 1 tiene el número de la sala.
+        /// La columan 2 tiene el tipo de sala.
+        /// </summary>
+        /// <returns>Matriz de Nx2 donde N es la cantida de salas.</returns>
+        public string[,] GetDatosSalas()
+        {
+            Repository repository = new Repository();
+            SalaGuardia[] arraySalas = repository.GetSalas();
+            string[,] datosSalas = new string[arraySalas.Length,2];
+
+            for (int i = 0; i < arraySalas.Length; i++)
+            {
+                datosSalas[i, 0] = arraySalas[i].GetDatosSala()[0];//Guardamos numero de sala
+                datosSalas[i, 1] = arraySalas[i].GetDatosSala()[1];//Guardamos tipo de sala
+            }
+
+            return datosSalas;
+        }
 
 
     }

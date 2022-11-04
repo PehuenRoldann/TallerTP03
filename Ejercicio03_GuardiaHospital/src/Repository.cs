@@ -82,5 +82,10 @@ namespace Ejercicio03_GuardiaHospital.src
             return false;//El turno no fue agendado
         }
 
+        public SalaGuardia[] GetSalas()
+        {
+            return Datos.Salas;
+        }
+
     }
 }

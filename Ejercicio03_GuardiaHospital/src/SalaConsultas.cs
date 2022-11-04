@@ -8,7 +8,11 @@ namespace Ejercicio03_GuardiaHospital.src
 {
     public class SalaConsultas : ISala
     {
-       
+        public string GetTipoDeSala()
+        {
+            return "Consultas";
+        }
+
         /// <summary>
         /// Devuelve el proximo turno a ser atendido de un array que contiene instancias de la clase Turno. <br></br>
         /// El turno se obtiene por orden de llegada.

@@ -37,6 +37,15 @@ namespace Ejercicio03_GuardiaHospital.src
         }
 
         /// <summary>
+        /// Devuelve un array de strings con los datos de la sala.
+        /// </summary>
+        /// <returns>Array con datos de la sala:<br></br> Indice 0: Identificador, Indice 1: Tipo de sala.</returns>
+        public string[] GetDatosSala()
+        {
+            return new string[] {_Id.ToString(), _Sala.GetTipoDeSala()};
+        }
+
+        /// <summary>
         /// Optiene el proximo turno de la sala entre dos fechas dadas.
         /// </summary>
         /// <param name="pFechaFin">Fecha de incio para buscar turnos.</param>

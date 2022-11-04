@@ -10,7 +10,7 @@ namespace Ejercicio03_GuardiaHospital.src
     {
         //BASES DE DATOS
         static private SalaGuardia[] _Salas = new SalaGuardia[2];
-        static private Turno[] _Turnos = new Turno[10];
+        static private Turno[] _Turnos = new Turno[20];
 
         static public Turno[] Turnos { get => _Turnos; set => _Turnos = value; }
         static public SalaGuardia[] Salas { get => _Salas; set => _Salas = value; }
