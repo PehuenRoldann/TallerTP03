@@ -12,38 +12,42 @@ namespace Ejercicio03_GuardiaHospital.src
         private string _nombre;
         private bool _finalizado;
         private DateTime _fecha;
-        private byte _nivelPrioridad;
+        private Nivel _nivelPrioridad;
         private int _idSala;
 
         //CONSTRUCTOR
-        public Turno(string pNombre, DateTime pFecha, int pIdSala, byte pNivelPrioridad)
+        /// <summary>
+        /// Crea una nueva instancia de la clase Turno.
+        /// </summary>
+        /// <param name="pNombre">Nombre del paciente.</param>
+        /// <param name="pFecha">Fecha del turno</param>
+        /// <param name="pIdSala">Numero de sala</param>
+        /// <param name="pPrioridad">Valor númerico de prioridad</param>
+        /// <param name="pDescripcion">Descripcion de la prioridad</param>
+        public Turno(string pNombre, DateTime pFecha, int pIdSala, int pPrioridad, string pDescripcion)
         {
             _nombre = pNombre;
             _fecha = pFecha;
             _idSala = pIdSala;
             _finalizado = false;
+            _nivelPrioridad = new Nivel(pPrioridad, pDescripcion);
         }
 
         //PROPIEDADES
         public string Nombre { get => _nombre; set => _nombre = value; }
         public bool Finalizado { get => _finalizado; set => _finalizado = value; }
         public DateTime Fecha { get => _fecha; set => _fecha = value; }
-        public byte NivelPrioridad { get => _nivelPrioridad; set => _nivelPrioridad = value; }
+        public Nivel NivelPrioridad { get => _nivelPrioridad; set => _nivelPrioridad = value; }
         public int IdSala { get => _idSala; set => _idSala = value; }
 
         //MÉTODO
 
         /// <summary>
-        /// Método que comprueba si el turno actual sucede antes de otro turno.
+        /// Finaliza el turno actual.
         /// </summary>
-        /// <param name="pOtroTurno">Turno para comparar</param>
-        /// <returns>
-        /// True si el turno actual es antes.<br></br> False si es después del otro turno.
-        /// </returns>
-        public bool AntesDe(Turno pOtroTurno)
+        public void Finalizar()
         {
-            if (this.Fecha.CompareTo(pOtroTurno.Fecha) < 0) { return true; }
-            else { return false; }
+            this.Finalizado = true;
         }
 
 
