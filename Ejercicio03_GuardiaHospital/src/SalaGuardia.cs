@@ -37,19 +37,21 @@ namespace Ejercicio03_GuardiaHospital.src
         }
 
         /// <summary>
-        /// Optiene el proximo turno de la sala
+        /// Optiene el proximo turno de la sala entre dos fechas dadas.
         /// </summary>
+        /// <param name="pFechaFin">Fecha de incio para buscar turnos.</param>
+        /// <param name="pFechaInicio">Fecha de fin para buscar turnos.</param>
         /// <returns>Devuelve un Array de strings con los datos del turno en el siguiente orden:<br></br>
         /// 0 = nombre del paciente
         /// 1 = horario
         /// 2 = prioridad <br></br> Devuelve null si no hay turnos para la sala el día de hoy.
         /// </returns>
-        public string[]? ProximoTurno()
+        public string[]? ProximoTurno(DateTime pFechaInicio, DateTime pFechaFin)
         {
             if (_Sala == null) {return null;}
 
             Repository repository = new Repository();
-            Turno[] arrayTurnosHoy = repository.GetTurnosBetweenDates(_Id, DateTime.Today, DateTime.Today.AddDays(1));
+            Turno[] arrayTurnosHoy = repository.GetTurnosBetweenDates(_Id, pFechaInicio, pFechaFin);
             //Comprobamos que haya turnos para buscar
             if (arrayTurnosHoy.Length == 0) {return null;}
 
@@ -77,7 +79,6 @@ namespace Ejercicio03_GuardiaHospital.src
             }
 
             return turnosResultado;
-
 
         }
     }
