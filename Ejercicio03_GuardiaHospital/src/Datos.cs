@@ -15,5 +15,6 @@ namespace Ejercicio03_GuardiaHospital.src
         static public Turno[] Turnos { get => _Turnos; set => _Turnos = value; }
         static public SalaGuardia[] Salas { get => _Salas; set => _Salas = value; }
 
+
     }
 }
